@@ -1144,32 +1144,32 @@ Focused on data extraction, cleaning, analysis, visualization, and dashboard cre
         </div>
     </footer>
 
-    <script>
-        // Download resume button handler
-        document.getElementById('downloadResume').addEventListener('click', function(e) {
-            e.preventDefault();
-            alert('Resume download would start here. In a real implementation, this would download your PDF resume.');
-            // In a real implementation:
-            // window.open('path-to-resume.pdf', '_blank');
-        });
+<script>
+    // Download resume button handler
+    document.getElementById('downloadResume').addEventListener('click', function(e) {
+        e.preventDefault();
+        // Replace the below link with your actual Google Drive "shareable link"
+        window.open('https://drive.google.com/file/d/1osX8zz-zuHvGNlMzV0iKDZVWZDAT38b-/view?usp=sharing', '_blank');
+    });
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
         });
-    </script>
+    });
+</script>
 </body>
+
 </html>
